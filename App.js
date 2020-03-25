@@ -25,7 +25,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 // componentes creados
 import Home from './src/screens/container/home.js';
-
+import Header from './src/sections/components/header.js';
 
 
 // const App: () => React$Node = () => {
@@ -42,7 +42,8 @@ export default class App extends Component<Props>{
     return (
       <Home>
 
-      <Text>Header</Text>
+      // <Text>Header</Text>
+      <Header />
       <Text>Buscador</Text>
       <Text>secciones</Text>
       <Text>Listado</Text>
