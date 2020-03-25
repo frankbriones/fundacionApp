@@ -16,7 +16,7 @@ function Header(props) {
 			<SafeAreaView>
 				<Image 
 					source={require('../../../assets/aurora.jpeg')}
-					style={}
+					style={styles.logo}
 				/>
 			</SafeAreaView>
 		</View>
@@ -29,7 +29,9 @@ const styles = StyleSheet.create({
 	logo: {
 		width: 80,
 		height: 25,
-	}
+		resizeMode: 'contain',
+	},
+
 })
 
 export default Header;
