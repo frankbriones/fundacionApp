@@ -26,6 +26,7 @@ import {
 // componentes creados
 import Home from './src/screens/container/home.js';
 import Header from './src/sections/components/header.js';
+import EventoList from './src/eventos/containers/evento_list.js';
 
 
 // const App: () => React$Node = () => {
@@ -46,7 +47,8 @@ export default class App extends Component<Props>{
       <Header/>
       <Text>Buscador</Text>
       <Text>secciones</Text>
-      <Text>Listado</Text>
+      // Listado de Eventos renderizado
+      <EventoList />
 
       </Home>
       );
