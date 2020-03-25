@@ -43,7 +43,9 @@ export default class App extends Component<Props>{
       <Home>
 
       // <Text>Header</Text>
-      <Header />
+      <Header>
+        <Text>Este es un hijo de header</Text>
+      </Header>
       <Text>Buscador</Text>
       <Text>secciones</Text>
       <Text>Listado</Text>
