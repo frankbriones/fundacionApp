@@ -44,10 +44,15 @@ const styles = StyleSheet.create({
 		backgroundColor: 'red',
 		// para colocar en una sola lines de manera horizontal los componets
 		flexDirection: 'row',
+
 	},
 
 	right: {
 		backgroundColor: 'green',
+		// ocupar mas espacio al elemento
+		flex: 1,
+		flexDirection: 'row',
+		justifyContent: 'flex-end',
 	}
 
 })
