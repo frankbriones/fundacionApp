@@ -2,6 +2,8 @@ import react, { Component } from 'react';
 import {
 	FlatList,
 } from 'react-native';
+import Layout from '../components/evento-list-layout.js';
+
 
 
 class EventoList extends Component {
@@ -17,11 +19,18 @@ class EventoList extends Component {
 			}
 		]
 		return (
+			// importar el layout para los eventos list
+			<Layout
+				title="Lista de Eventos"
+			>
 			<FlatList 
 
 				data={list}
 				renderItem={({ item }) => <Text>{item.title}</Text>}
 			/>
+
+			</Layout>
+
 
 		)
 	}
