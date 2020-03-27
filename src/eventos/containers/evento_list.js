@@ -3,18 +3,25 @@ import {
 	FlatList,
 } from 'react-native';
 import Layout from '../components/evento-list-layout.js';
+import Empty from '../components/empty.js';
+import Separator from '../components/vertical-separator.js';
 
 
 
 class EventoList extends Component {
+	renderEmpty = () => <Empty text="No hay Elementos" />
+
+	itemSeparator = () => <Separator />
+
+
 	render () {
 		const list = [
 			{
-				title: 'leo',
+				title: 'Pokemon',
 				key: '1',
 			},
 			{
-				title: 'Franklin',
+				title: 'Digimon',
 				key: '2',
 			}
 		]
@@ -26,6 +33,11 @@ class EventoList extends Component {
 			<FlatList 
 
 				data={list}
+				//propiedad o funcion (componente) para devolver componente  que demuestre un mensaje
+				// ListEmptyComponent={() => <Text>No ay Eventos en lista...</Text>} 
+
+				ListEmptyComponent ={this.renderEmpty}
+				ItemSeparatorComponent = {this.itemSeparator}
 				renderItem={({ item }) => <Text>{item.title}</Text>}
 			/>
 
