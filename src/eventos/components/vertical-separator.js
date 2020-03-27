@@ -8,12 +8,23 @@ import {
 
 function VerticalSeparator(props){
 	return(
-		<View>
+		<View style={[
+			styles.separator,
+			{
+				borderTopColor: (props.color) ? props.color: '#eaeaea'
+			}
+		]}>
 			<Text></Text>
 		</View>
 
 	)
 }
 
+const styles = StyleSheet.create({
+	separator:{
+		borderTopWidth: 1,
+
+	}
+})
 
 export default VerticalSeparator;

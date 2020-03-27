@@ -9,8 +9,8 @@ import {
 
 function Empty(props){
 	return (
-		<View styles={style.container}>
-			<Text styles={style.text}>{props.text}</Text>
+		<View style={styles.container}>
+			<Text style={styles.text}>{props.text}</Text>
 		</View>
 
 	)

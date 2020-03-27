@@ -11,7 +11,7 @@ import Separator from '../components/vertical-separator.js';
 class EventoList extends Component {
 	renderEmpty = () => <Empty text="No hay Elementos" />
 
-	itemSeparator = () => <Separator />
+	itemSeparator = () => <Separator color="red" />
 
 
 	render () {
